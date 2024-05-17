@@ -1,23 +1,20 @@
-import React, { useState } from 'react'
-import'./Home.css'
-import Header from '../../components/Header/Header'
-import ExploreMenu from '../../components/ExploreMenu/ExploreMenu'
-import FoodDisplay from '../../components/FoodDisplay/FoodDisplay'
-import AppDownLoad from '../../components/AppDownload/AppDownLoad'
-
-
-
+import React, { useState } from "react";
+import "./Home.css";
+import Header from "../../components/Header/Header";
+import ExploreMenu from "../../components/ExploreMenu/ExploreMenu";
+import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";
+import AppDownLoad from "../../components/AppDownload/AppDownload";
 
 const Home = () => {
-  const [category, setCategory] =useState("All")
+  const [category, setCategory] = useState("All");
   return (
     <div>
-        <Header/>
-        <ExploreMenu category={category} setCategory={setCategory}/>
-        <FoodDisplay category={category}/>
-<AppDownLoad/>
+      <Header />
+      <ExploreMenu category={category} setCategory={setCategory} />
+      <FoodDisplay category={category} />
+      <AppDownLoad />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

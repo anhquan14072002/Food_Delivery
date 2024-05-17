@@ -1,7 +1,7 @@
 import React from 'react'
 import'./AppDownload.css'
 import { assets } from '../../assets/assets'
-const AppDownLoad = () => {
+const AppDownload = () => {
   return (
     <div className="app-download" id='app-download'>
         <p>ForBetter Experience Dowload <br /> Tomoto App</p>
@@ -13,4 +13,4 @@ const AppDownLoad = () => {
   )
 }
 
-export default AppDownLoad
+export default AppDownload
