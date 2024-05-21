@@ -9,8 +9,10 @@ const addFoodRepository = async (foodData) => {
   } catch (error) {
     console.error(error);
     return { success: false, message: "Error" };
+
   }
 };
+
 
 const listFoodRepository = async () => {
   try {

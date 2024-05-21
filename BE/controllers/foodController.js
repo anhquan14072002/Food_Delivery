@@ -6,6 +6,9 @@ import fs from "fs"
 //add food item
 
 const addFood = async (req,res)=>{
+  if (!req.file) {
+    return res.json({ error: 'No file uploaded' });
+  }
   const image_filename = `${req.file.filename}`
 
   const food =new foodModel({
