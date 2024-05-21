@@ -15,7 +15,7 @@ const addFoodRepository = async (foodData) => {
 const listFoodRepository = async () => {
   try {
     const foods = await foodModel.find({});
-    return({ succsess: true, data: foods });
+    return({ success: true, data: foods });
   } catch (error) {}
 };
 

@@ -30,10 +30,10 @@ try {
     const food =await findFoodById(req.body.id);
     fs.unlink(`uploads/${food.image}`,()=>{})
     await removeFoodRepository(req.body.id);
-    res.json({succsess:true, message:"Food Removed"})
+    res.json({success:true, message:"Food Removed"})
 } catch (error) {
     console.log(error);
-    res.json({succsess:false, message:"Erorr"})
+    res.json({success:false, message:"Erorr"})
 }
 }
 export{addFood, listFood,removeFood}
